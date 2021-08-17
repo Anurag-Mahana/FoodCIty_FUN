@@ -1,0 +1,212 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* .....................USING FLEXBOX......................... */
+
+.container{
+   height: 100vh;
+   background:url("food6.jpeg") no-repeat;
+   background-size: cover;
+   background-position:center;
+   display:flex;
+   justify-content:space-between;
+}
+.navbar{
+    display:flex;
+    list-style: none;
+    font-size:30px;
+    margin-top: 5px;
+}
+
+/* .....................NAVBAR......................... */
+.navbar span{
+    background-color: rgb(228, 238, 94);
+    padding:2px 5px 2px 5px;
+    margin-left: 50px;
+    margin-right: 60px;
+    cursor: pointer;
+}
+.left{
+   background: rgba(0, 0, 0, 0.568);
+   color: #fff;
+   height: 100vh;
+   width: 30%;   
+   /* padding: 50px; */
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   
+}
+.first{
+    font-size:35px;
+    /* font-family: 'STIX Two Text', serif; */
+    font-weight: 600;
+}
+
+.second{
+    padding:50px 0;
+    font-style: italic;
+    font-size:20px;
+}
+.third{
+    padding:50px 0;
+    font-size: 40px;
+    /* font-family: 'STIX Two Text', serif; */
+    font-weight:100px;
+}
+button{
+    margin-top:15px;
+    height:50px;
+    width:250px;
+    background-color:rgba(255, 196, 0, 0.664);
+    font-size: 30px;
+    color:#fff;
+    cursor: pointer;
+}
+
+.right{
+
+   height: 100vh;
+   width: 70%;  
+}
+/* .....................RESPONSIVENESS......................... */
+@media screen and (max-width:1257px){
+    .container{
+        height: 100vh;
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+
+    }
+    .left{
+        height:80%;
+        width:100%;
+        padding-top: 40px;
+    }
+    .right{
+        height:10%;
+        width:100%;
+    }
+    
+    .first h1{ 
+        font-size: 60px;
+    }
+    .second h2{
+        padding:5px;
+        font-size: 25px;
+    }
+    .third p{
+        padding:5px;
+        font-size: 30px;
+    }
+    button{
+        margin-top:15px;
+        height:50px;
+        width:200px;
+        font-size:25px;
+    }
+    .navbar {
+        justify-content:space-around;
+        font-size:30px;
+        margin-top: 5px;
+    }
+    .navbar span{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+   
+}
+@media screen and (max-width:768px){
+    
+    .first h1{   
+        font-size: 40px;
+    }
+    .second h2{
+        padding:5px;
+        font-size: 25px;
+    }
+    .third p{
+        padding:5px;
+        font-size: 20px;
+    }
+    button{
+        margin-top:15px;
+        height:50px;
+        width:30%;
+        font-size:15px;
+    }
+    .navbar {
+        justify-content:space-around;
+        font-size:25px;
+        margin-top: 5px;
+    }
+    .navbar span{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+}
+
+
+@media screen and (max-width:421px){
+    .container{
+        height: 100vh;
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+
+    }
+    .left{
+        height:80%;
+        width:100%;
+        padding-top: 40px;
+    }
+    .right{
+        height:10%;
+        width:100%;
+    }
+    .first h1{  
+        font-size: 40px;
+    }
+    .second h2{
+        padding:5px;
+        font-size: 25px;
+    }
+    .third p{
+        padding:10px;
+        font-size: 30px;
+    }
+    button{
+        margin-top:15px;
+        height:40px;
+        width:60%;
+        font-size:20px;
+    }
+    .navbar {
+        justify-content:space-around;
+        font-size:20px;
+        margin-top: 5px;
+    }
+    .navbar span{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.navbar span:hover{
+    background:#00000070;
+    color:#fff;
+    transition-delay: 0.1s; 
+}
+button:hover{
+    background:#ffffff;
+    color:rgb(0, 0, 0);
+    transition-delay: 0.1s; 
+}
+
